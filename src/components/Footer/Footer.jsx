@@ -13,8 +13,7 @@ const Footer = () => {
               <img src={companion_white} alt="logo" className="me-2 footerlogo" style={{ width: '50px' }} />
             </div>
             <p className="companiontext mt-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
-            </p>
+At Companion, we’re dedicated to making every adventure safer and more meaningful — built on the foundation of trust, connection, and care.            </p>
           </div>
 
           <div className="col-6 col-md-6 col-lg-3 text-center text-lg-start footercol2">
@@ -38,8 +37,8 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-md-6 col-lg-3 text-end text-lg-start footercol4">
-            <p className="footersubhead text-end">Connect With Us</p>
-            <div className="d-flex justify-content-end justify-content-lg-end gap-3 social-icon flex-wrap mt-4 ">
+            <p className="footersubhead ">Connect With Us</p>
+            <div className="d-flex     gap-5 social-icon flex-wrap mt-4 ">
               <a href="#"><i className="bi bi-instagram fs-5"></i></a>
               <a href="#"><i className="bi bi-twitter fs-5"></i></a>
               <a href="#"><i className="bi bi-facebook fs-5"></i></a>
@@ -53,7 +52,7 @@ const Footer = () => {
         <hr className="my-4 text-white" />
 
         <div className="text-center small copyrightrow">
-          <p className="mb-0">© 2025 Companion. All rights reserved. Developed by Xeventure </p>
+          <p className="mb-0">© 2025 Companion. All rights reserved. Developed by <b><a style={{textDecoration:'none', color:'white'}} href="https://xeventure.com/" target='blank'>Xeventure</a></b> </p>
         </div>
       </div>
     </footer>

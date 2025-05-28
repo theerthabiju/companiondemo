@@ -14,13 +14,16 @@ const About = () => {
       <span className='hrhead'><hr /></span>
       <h3 className="aboutustext">Where Every Journey <br /> <span className="aboutushighlight"> Begins with Trust </span></h3>
       <p className="aboutusparagraph">
-        Welcome to Greece, a country of beautiful contradictions. Walk through
-        the country’s groves and archaeological sites, visit groups of islands,
-        get to know the beaches, gorges and mountains, and enjoy nature’s
-        breathtaking scenery. The country’s rich history, culture and coastline
-        have made it one of the world’s favourite tourist destinations. In
-        winter, Greece is ideal for winter sports. Ski resorts with ultra-modern
-        facilities offer an unforgettable experience down spectacular ski runs.
+       We specialize in connecting travelers with verified spots, helpful resources, and real-time insights to enhance every adventure.
+Built on a foundation of trust and innovation, our platform ensures that you explore with confidence, no matter where the road leads.
+At Companion, we believe every journey begins with trust — and we’re here to walk that path with you.
+We are a travel-tech platform designed to guide and support explorers, campers, and outdoor lovers by offering verified locations, safety insights, and essential resources.
+Our mission is to empower every traveler with confidence through real-time information, community-driven tips, and seamless planning tools.
+Whether you're venturing into the mountains, setting up camp by a lake, or discovering hidden gems on the road, Companion is here to help you feel prepared, safe, and inspired.
+Founded on the principles of safety, community, and connection, we’re more than just an app — we’re the partner that journeys with you.
+
+
+
       </p>
 
       <div className="features-container">
