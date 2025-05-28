@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-md-6 col-lg-3 text-end text-lg-start footercol4">
-            <p className="footersubhead text-end">Connect With Us</p>
-            <div className="d-flex justify-content-end justify-content-lg-end gap-3 social-icon flex-wrap mt-4 ">
+            <p className="footersubhead ">Connect With Us</p>
+            <div className="d-flex  gap-5 social-icon flex-wrap mt-4 ">
               <a href="#"><i className="bi bi-instagram fs-5"></i></a>
               <a href="#"><i className="bi bi-twitter fs-5"></i></a>
               <a href="#"><i className="bi bi-facebook fs-5"></i></a>
