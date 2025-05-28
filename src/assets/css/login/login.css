@@ -1,0 +1,119 @@
+
+.loginpagerow{
+    overflow: hidden;
+}
+.logincontainer{
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.logincol1{
+    width: 100%;  
+}
+.login-content h2{
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 30px;
+    overflow-y: hidden;
+}
+.loginhead{
+overflow-y: hidden;
+}
+.login-content p{
+        color: rgba(0, 0, 0, 0.726);
+    font-size: 14px;
+    text-align: start;
+
+}
+.logincol2 {
+  background-color: #ffffff;
+}
+
+ .logininputrow .form-control{
+    border-radius: 5px !important;
+    border: none !important;
+}
+.logininputrow input {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #DFF7FF;
+  border: none;
+}
+ .logininputrow input:focus {
+
+  outline: none !important;             
+  box-shadow: none !important;   
+  border: none !important;      
+  background-color:  #DFF7FF !important; 
+  outline: none;
+}
+
+.loginhead{
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 26px;
+}
+.loginline{
+    color: #0081ac;
+}
+.orregistertext{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.514);
+}
+.termtext{
+color: #24C6FE;
+}
+.createaccountbtn{
+  background-color: #24C6FE !important;
+  padding: 15px !important;
+  border: none;
+  color: white !important;
+}
+.createaccountbutton{
+     border: none;
+     background-color: white;
+     color: #24c8feb7;
+     font-size: 12px;
+     overflow-y: hidden;
+
+}
+.createaccountbtn:hover {
+  background-color: #8adcfc !important;
+}
+.loginsourcerow img{
+    width: 50px;
+    height: 50px;
+}
+.loginsourcerow button{
+border:  1px solid rgba(0, 0, 0, 0.397);
+}
+ .loginimg{
+background-color: white;
+}
+@media (max-width:768px) {
+
+.logincontainer{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    overflow: hidden;
+} 
+.login-content h2{
+ 
+    font-size: 24px;
+}
+.login-content p{
+    font-size: 10px;
+
+} 
+.logininputrow input {
+    font-size: 10px;
+}
+.orregisterhead{
+  text-align: center;
+
+}
+.loginsourcerow button{
+    margin-top: 20px;
+}
+}

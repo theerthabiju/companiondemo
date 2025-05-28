@@ -1,0 +1,122 @@
+.whychooseuscontainer{
+  margin-top: 60px;
+  padding: 60px;
+}
+.whychooserow {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 10px 20px;
+}
+
+.image-slide-in {
+  transform: translateX(0);
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
+}
+
+.image-slide-in.visible {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.whychooserow img {
+  max-width: 100%;
+  height: auto;
+}
+
+.whychoosetext button {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.404) !important;
+  padding: 6px 18px;
+  font-size: 14px;
+}
+
+.whychoosetext2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+  overflow-y: hidden;
+}
+
+.whychoosetext3 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.progresstextrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.progressbar1,
+.progressbar2 {
+  height: 8px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar {
+  background-color: #008CC0 !important;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl !important;
+  text-orientation: mixed !important;
+  transform: rotate(180deg) !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  color: #00000080 !important;
+}
+
+.yearimg {
+  max-width: 80px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.DiscoverMorebtn button {
+  width: 100%;
+  max-width: 160px;
+  background-color: #24C6FE;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.DiscoverMorebtn button:hover {
+  background-color: #6ecdf0;
+}
+
+.DiscoverMorebtn button a {
+  color: white;
+  text-decoration: none;
+}
+@media ( max-width : 1200px) {
+  .whychooseuscontainer{
+  margin-top: 30px;
+  padding: 20px;
+}
+}
+@media (max-width: 768px) {
+  .whychoosetext2 {
+    font-size: 28px;
+  }
+
+  .verticalrow {
+    justify-content: center;
+  }
+
+  .vertical-text {
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    font-size: 10px !important;
+    text-align: start;
+    margin-bottom: 0px;
+    display: block;
+  }
+
+  .yearimg {
+    max-width: 60px;
+  }
+}

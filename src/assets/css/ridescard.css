@@ -1,0 +1,118 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+overflow-x: hidden;
+    }
+
+    .ridecontainer {
+      margin-top: 80px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+      justify-content: center;
+        font-family: "Poppins", sans-serif;
+    font-style: normal;
+    padding: 60px;
+    }
+ .rideoverlay {
+      position: relative;
+    bottom: 50px;
+    place-items: center;
+
+  }
+    .ride-card {
+      width:380px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+
+    }
+.fullcard{
+  border-radius: 16px;
+}
+    .ride-card:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+
+    .ride-card img {
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .ride-info {
+      padding: 15px;
+      background-color: #ffffff;
+      font-size: 15px;
+      width: 84%;
+      border-radius: 20px;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+   }
+
+    .ride-route {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .ride-user {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 3px;
+      
+    }
+
+    .ride-user span {
+      margin-left: 5px;
+
+    }
+
+    .verified-icon img {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+
+    .ride-Seat {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .join-btn {
+      background: #24C6FE;
+      color: white;
+      border: none;
+      width: 35%;
+      height: 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .join-btn:hover{
+      background-color: #97d6f5;
+    }
+    @media (max-width: 1300px) {
+    .ride-card {
+      width:300px;
+      
+    }
+    
+    .ridecontainer {
+          margin-top: 40px;
+    padding: 30px;
+    }
+    .ride-card img {
+      object-fit: cover;
+    }
+
+    }
+  

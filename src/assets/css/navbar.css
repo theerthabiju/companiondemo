@@ -1,0 +1,67 @@
+body{
+overflow-x: hidden !important;
+}
+.navbar {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal !important;
+  background-color: #ffffff !important;
+  
+}
+
+.findaridebtn {
+  background-color: #24c6fe !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 15px !important;
+}
+.loginbtn {
+  font-size: 15px !important;
+  border: none !important;
+}
+.nav-link {
+  margin-left: 5px;
+  font-size: 15px !important;
+}
+
+.logo-img {
+  width: 40px;
+  height: auto;
+}
+@media (max-width: 1439px) {
+.nav-link {
+  margin-left: 5px;
+  font-size: 8px !important;
+}
+.findaridebtn {
+  background-color: #24c6fe !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 9px !important;
+}
+.loginbtn {
+  font-size: 9px !important;
+  border: none !important;
+}
+}
+@media (max-width: 991px) {
+  .mobile-menu {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .mobile-menu .nav-link {
+    padding: 0.5rem 1rem;
+    margin: 5px 0;
+    font-weight: 500;
+  }
+
+  .custom-toggler {
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' fill='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}

@@ -1,0 +1,264 @@
+.filtercontainer {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.filterul {
+  padding: 80px 20px;
+}
+.filtercol {
+  background-color: #008dc0;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.slider-filter {
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 30px;
+}
+.slider-section {
+  margin-bottom: 30px;
+}
+.explorehead{
+  overflow-y: hidden;
+  color: #2727276c;
+  font-weight: 600;
+  font-size: 22px;
+}
+.hrhead{
+  color: #008dc096;
+}
+.transition-sidebar {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.transition-sidebar.show {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  height: auto;
+}
+
+.transition-sidebar.hide {
+  opacity: 0;
+  transform: translateX(-20px);
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+.dropdownbg{
+    background-color: #ffffff !important;
+    color: #094b63 !important;
+}
+.datefilter{
+   background-Color: #fff;
+   color: #094b63 !important;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   padding: 6px 10px;
+}
+.slider-label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.slider {
+  width: 100%;
+  margin: 5px 0;
+  -webkit-appearance: none;
+  background: #00bbff;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.exploreridecard-img{
+    height: 200px;
+}
+
+.exploreridecard {
+  width: 100%;
+  overflow: hidden;
+  border: none;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.exploreridecardoverlay {
+  position: relative;
+  bottom: 20px;
+  place-items: center;
+  margin-bottom: 0 !important;
+}
+.exploreridecard  p {
+  margin-bottom: 8px !important;
+}
+.exploreridecard-hr {
+  margin: 0 auto;
+  width: 80%;
+  color: #36c7fc;
+}
+.exploreridecard-info {
+  width: 80%;
+  background-color: #ffffff;
+  color: #24c6fe;
+  padding: 13px;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.1);
+}
+.exploreridecardbody {
+  padding: 10px;
+}
+.exploreridecardride-route {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+}
+.exploreridecardbtn {
+  background-color: #24c6fe !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.travelertext {
+  color: #24c6fe;
+  font-size: 16px;
+  font-weight: 700;
+}
+.departure {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.452);
+}
+.exploreridecarddate {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.452);
+}
+.exploreridecarddate img {
+  width: 25px;
+  margin-left: -5px;
+  margin-right: 2px;
+}
+.toggle-filter-btn {
+  display: inline-block;
+  z-index: 1000;
+}
+
+.filter-sidebar {
+  transition: all 0.3s ease;
+}
+.toggle-filter-btn{
+  background-color: #24c6fe !important;
+  color: white !important;
+}
+.toggle-filter-btn:hover{
+    background-color: #6dd8ffe7 !important;
+}
+.applyfilterbtn{
+    background-color: #00bbff !important;
+    color: white !important;
+    border: none !important;
+
+}
+.applyfilterbtn:hover{
+    background-color: #6dd8ffe7 !important;
+}
+@media (max-width: 992px) {
+  .filter-sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 80%;
+    height: calc(100vh - 80px);
+    z-index: 999;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #008CC0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .filterul {
+    padding: 30px 15px;
+  }
+  .exploreridecard-info {
+    width: 100%;
+  }
+  .exploreridecard-img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 992px) {
+  .filter-sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: 999;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #008CC0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .transition-sidebar.show {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+  }
+
+  .transition-sidebar.hide {
+    display: none;
+  }
+
+  .close-filter-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .filterrow {
+    flex-direction: column;
+  }
+
+  .filtercol {
+    width: 100%;
+  }
+}

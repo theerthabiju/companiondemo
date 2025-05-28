@@ -1,0 +1,95 @@
+.footersection {
+  background-color: #008CC0;
+  font-family: "Poppins", sans-serif;
+  padding: 60px 0 20px;
+}
+
+.footersubhead {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0px !important;
+  margin-top: 20PX;
+}
+.footerlogo{
+  margin-top: 15px;
+  width: 200px !important;
+  height: 60px;
+}
+.companiontext {
+  font-size: 14px;
+  color: white;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+
+.links,
+.links2 {
+  margin-top: 40px;
+}
+
+.links p,
+.links2 p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.links a:hover {
+  color: #e0e0e0;
+}
+
+.social-icon {
+  margin-top: 20px;
+  overflow-y: hidden;
+}
+
+.social-icon a {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.copyrightrow p {
+  font-size: 13px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footersubhead,
+  .companiontext,
+  .links p,
+  .links2 p {
+    text-align: center;
+  }
+
+  .social-icon {
+    justify-content: center !important;
+  }
+
+  .social-icon a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .copyrightrow p {
+    font-size: 11px;
+  }
+}

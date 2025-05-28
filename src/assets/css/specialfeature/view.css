@@ -1,0 +1,67 @@
+.viewcontainer {
+  margin-bottom: 100px;
+}
+
+.viewtexthead {
+  color: rgba(0, 0, 0, 0.644);
+  margin-top: 80px;
+  margin-bottom: 20px;
+  overflow-y: hidden;
+  text-align: center;
+  font-size: 40px;
+}
+.viewtext{
+    color: #24C6FE;
+    font-weight: bold;
+    overflow-y: hidden;
+        font-size: 48px;
+}
+.viewtextparagraph {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.addviewpointbtn {
+  background-color: #24c6fe !important;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.parent-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viewpointimg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.viewpointcard {
+  margin-bottom: 20px;
+    position: relative;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.viewpointimgbtn{
+  background-color: #008CC0 !important;
+  width: 100%;
+    border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+    position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.viewpointmodalbtn{
+    background-color: #008CC0 !important;
+
+}

@@ -1,0 +1,201 @@
+.findridecontainer {
+  margin-top: 80px;
+    padding: 60px;
+}
+
+.findridecard {
+  border-radius: 34px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none !important;
+  width: 100%;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.findridecard:hover {
+  transform: translateY(-3px);
+}
+ .cardtexthead{
+color: #000000c0;
+overflow-y: hidden;
+font-weight: 400;
+font-size: 36px;
+ }
+.cardmarkedtext{
+color: #24C6FE;
+font-weight: bold;
+font-size: 42px;
+
+}
+.findridelist {
+  font-size: 14px;
+  list-style: none;
+  padding: 20px;
+  line-height: 1.9;
+}
+
+.findrideoverlay {
+  background-color: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.158);
+  border-radius: 20px;
+  padding: 15px 10px;
+  text-align: center;
+  width: 50%;
+  margin: -20px auto 30px auto;
+  position: relative;
+  top: 0px;
+}
+
+.findrideoverlay p {
+  margin: 0;
+  color: #004c68;
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 20px !important;
+}
+
+.Gosomewherebtn {
+  background-color: #008cc0 !important;
+  border-radius: 0 !important;
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.findriderow2 {
+  margin-top: 30px !important;
+}
+
+.rewards-p {
+  font-size: 14px !important;
+}
+@media (min-width:1024px)and (max-width:1399px) {
+    .Gosomewherebtn{
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  .findridecard {
+    max-width: 95%;
+  }
+.findridecontainer {
+
+    padding: 20px;
+}
+  .findridelist {
+    font-size: 10px;
+  }
+  .findrideoverlay {
+    width: 70%;
+    position: relative;
+    top: 0px;
+    padding: 20px;
+    font-size: 13px;
+  }
+  .rewards-p {
+    font-size: 10px !important;
+  }
+    .Gosomewherebtn{
+    display: none !important;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .findridecol {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .findrideoverlay {
+    width: 80%;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+  }
+
+  .findridelist {
+    font-size: 12px !important;
+    margin-left: 0 !important;
+  }
+
+  .findrideoverlay p {
+    font-size: 12px !important;
+  }
+  .Gosomewherebtn{
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .findrideoverlay {
+    width: 90%;
+    padding: 4px 8px;
+  }
+
+  .findridelist {
+    font-size: 11px;
+  }
+
+  .rewards-p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 425px) {
+  .findrideoverlay {
+    width: 90%;
+    padding: 16px 6px;
+    position: relative;
+    top: 0px;
+  }
+
+  .findridelist {
+    font-size: 14px !important;
+  }
+
+  .rewards-p {
+    font-size: 10px;
+  }
+
+  .Gosomewherebtn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .findridelist {
+    font-size: 9px;
+  }
+
+  .rewards-p {
+    font-size: 9px;
+  }
+
+  .Gosomewherebtn {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .findrideoverlay {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+
+  .findridelist {
+    font-size: 10px !important;
+  }
+
+  .rewards-p {
+    font-size: 10px !important;
+  }
+
+  .Gosomewherebtn {
+    font-size: 10px;
+  }
+}

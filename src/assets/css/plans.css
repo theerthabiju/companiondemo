@@ -1,0 +1,126 @@
+.planssection{
+    background-color: #E9F9FF;
+}
+.planscontainer{
+margin-top: 80px;
+margin-bottom: 90px;
+  padding: 60px;
+
+}
+.planhead{
+   font-size: 46px;
+   font-weight: bold;
+   overflow-y: hidden;
+}
+.plansub{
+     font-size: 14px;
+     text-align: center;
+     overflow-y: hidden; 
+     margin-top: 10px;
+     margin-bottom: 30px;
+}
+.plancardbody{
+     margin-top: 50px;
+}
+.tatebtn{
+  background-color: #24C6FE !important;
+  position: relative;
+ top: 40px;
+   
+}
+.plan-rate-circle {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  color: #008CC0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 2px rgba(133, 133, 133, 0.2);
+  z-index: 2;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.plan-rate-circle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 1px 5px rgba(0, 141, 192, 0.349);
+}
+
+.plancard{
+    background-color: white;
+border:none !important;
+border-radius: 30px;
+
+}
+.plancardbody ul{
+    padding: 5px;
+    margin-top: 15px;
+    margin: 0;
+}
+.plancardbody ul li{
+   font-size: 12px;
+}
+.plancard-title{
+background-color: #24C6FE ;
+color: white !important;
+padding: 40px;
+text-align: center;
+font-weight: bold;
+}
+.buynowbtn{
+   width: 100%;
+   background-color:#24C6FE !important;
+   color: white !important;
+   margin-top: 30px;
+   margin-bottom: 0px !important;
+   font-size: 12px !important;
+}
+.buynowbtn:hover{
+    background-color:#9ce5ff !important;
+ 
+}
+@media (max-width:767px) {
+   .plancardbody {
+    max-height: 250px; 
+    overflow-y: auto;
+  }
+   .plancard{
+margin-bottom: 20px !important;
+   } 
+   .plancardbody ul li{
+    font-size: 9px !important;
+   }
+   .buynowbtn{
+font-size: 10px !important;
+   }
+}
+
+
+@media (max-width:1024px) {
+.plancard{
+width: 100%;
+
+   }
+   .planscontainer{
+margin: 30px;
+  padding: 20px;
+
+}
+     .plancardbody {
+    max-height: 250px; 
+    overflow-y: auto;
+  }
+     .plancardbody ul li{
+    font-size: 9px !important;
+   }
+   .buynowbtn{
+font-size: 10px !important;
+   }
+}

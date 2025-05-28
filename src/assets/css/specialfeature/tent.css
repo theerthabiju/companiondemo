@@ -1,0 +1,231 @@
+.tentbannercontainer {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  padding-top: 50px;
+}
+
+.tentbanneroverlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tentbannerhead {
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.breadcrumbnav {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  z-index: 1;
+}
+
+.breadcrumblist {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbitem a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.breadcrumbarrow {
+  color: #fff;
+  padding-top: 5px;
+}
+.breadcrumbitem {
+  background-color: #00bfff;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  width: 100px;
+}
+.tentcontainer2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+.tenttextheading {
+  color: rgba(0, 0, 0, 0.644);
+  margin-top: 80px;
+  margin-bottom: 20px;
+  overflow-y: hidden;
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+}
+.tenttextparagraph {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modaltext{
+  overflow-y: hidden;
+  color: #0098ca;
+}
+.modalbtn{
+  background-color: #0098ca !important;
+  color: white !important;
+}
+.modal-backdrop{
+  background-color: #c9c9c969 !important;
+}
+.modal-content.tent-modal {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.tentbtn {
+  background-color: #24c6fe !important;
+  color: white !important;
+  border: none;
+  height: 45px;
+}
+
+.tentbuttonwrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.tentlocations {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5px;
+  gap: 10px;
+}
+.tentlocations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tentspottext{
+      color: #24C6FE;
+    font-weight: bold;
+    overflow-y: hidden;
+        font-size: 48px;
+}
+.location {
+  padding: 10px 15px;
+  background-color: #eaf8ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.location {
+  overflow-y: hidden;
+  text-align: start;
+  padding: 10px;
+  background-color: #9bdef55d;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  color: rgba(53, 53, 53, 0.719);
+}
+.tent-addbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0;
+}
+
+.tent-searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0;
+}
+.location i {
+  margin-right: 10px;
+}
+.tent-input {
+  flex: 1;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background-color: #4abbe0;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.tentsearch-input {
+  flex: 1;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background-color: #4abbe0;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.tentsearch-inputt::placeholder {
+  color: white !important;
+}
+.tent-input::placeholder {
+  color: white;
+}
+
+.tent-add-btn {
+  background-color: #0098ca;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tent-add-btn img {
+  width: 25px;
+}
+.tent-add-btn:hover {
+  background-color: #beebfa;
+}
