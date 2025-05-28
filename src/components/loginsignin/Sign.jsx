@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "../../assets/css/login/login.css";
-import Navbar from "../Navbar/Navbar";
 import loginimg from "../../assets/images/loginimg.png";
-import google from "../../assets/images/google.png";
+import google from "../../assets/images/Google.png";
 import { useNavigate, Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 
 const Sign = () => {
   const [formData, setFormData] = useState({
