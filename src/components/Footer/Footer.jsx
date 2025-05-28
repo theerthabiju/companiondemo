@@ -13,8 +13,7 @@ const Footer = () => {
               <img src={companion_white} alt="logo" className="me-2 footerlogo" style={{ width: '50px' }} />
             </div>
             <p className="companiontext mt-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
-            </p>
+At Companion, we’re dedicated to making every adventure safer and more meaningful — built on the foundation of trust, connection, and care.            </p>
           </div>
 
           <div className="col-6 col-md-6 col-lg-3 text-center text-lg-start footercol2">
