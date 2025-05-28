@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../../assets/css/banner.css";
-import Doubleup from "../../assets/images/Doubleup.png";
+import Doubleup from "../../assets/images/DoubleUp.png";
 import Doubledown from "../../assets/images/Doubledown.png";
 import Calendar from "../../assets/images/Calendar.png";
 import Users from "../../assets/images/Users.png";
