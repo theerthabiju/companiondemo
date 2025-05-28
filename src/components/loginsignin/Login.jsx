@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../assets/css/login/login.css";
 import { useNavigate } from "react-router-dom";
 import signinimg from "../../assets/images/signinimg.png";
-import google from "../../assets/images/google.png";
+import google from "../../assets/images/Google.png";
 
 const Login= () => {
   const [formData, setFormData] = useState({
