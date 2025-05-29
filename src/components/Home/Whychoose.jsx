@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState }  from 'react';
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../assets/css/whychoose.css";
 import whychoose from "../../assets/images/whychoose.png";
 import year from "../../assets/images/year.png";
@@ -77,8 +79,10 @@ const Whychoose = () => {
       </div>
 
       <div className="DiscoverMorebtn">
-        <button className="btn btn-outline">
-          <a href="#">Discover More</a>
+           <button className="btn btn-outline">
+          <Link className="nav-link " to="/companion/exploreride">
+                          Discover More
+                        </Link>
         </button>
       </div>
     </div>
