@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../assets/css/banner.css";
 import Doubleup from "../../assets/images/DoubleUp.png";
 import Doubledown from "../../assets/images/Doubledown.png";
@@ -14,6 +16,7 @@ import { axiosInstance } from "../../util/AxiosInstance";
 import Pikaday from "pikaday";
 
 const Banner = () => {
+       const navigate = useNavigate();
   const baseUrl = import.meta.env.VITE_BASE_URL;
   console.log("Base URL:", baseUrl);
 
@@ -159,12 +162,16 @@ const Banner = () => {
               />
             </div>
 
-            <div className="form-actions">
-              <button type="button" className="form-newridebtn">Post A New Ride</button>
+             <div className="form-actions">
+              <button type="button" className="form-newridebtn">
+                <Link className="nav-link " to="/companion/postnewride">
+Post A New Ride </Link>
+              </button>
               <button type="submit" className="form-searchbtn">
                 <img src={Searchicon} alt="Searchicon" /> Search
               </button>
-              <button type="button" className="form-joinridebtn">Join A Ride</button>
+              <button type="button" className="form-joinridebtn">   <Link className="nav-link " to="/companion/exploreride">
+Join A Ride </Link></button>
             </div>
           </form>
 
