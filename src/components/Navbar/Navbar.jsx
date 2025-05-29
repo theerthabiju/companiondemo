@@ -81,8 +81,10 @@ const Navbar = () => {
                 Login
               </Link>
             )}
-            <button className="btn findaridebtn text-white" type="button">
-              Find A Ride
+         <button className="btn findaridebtn text-white" type="button">
+               <Link className="nav-link " to="/companion/exploreride">
+                 Find A Ride   
+              </Link>
             </button>
           </div>
         </div>
