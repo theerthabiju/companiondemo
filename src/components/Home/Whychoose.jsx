@@ -1,14 +1,16 @@
 import React, { useEffect, useRef, useState }  from 'react';
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../assets/css/whychoose.css";
 import whychoose from "../../assets/images/whychoose.png";
 import year from "../../assets/images/year.png";
-import AOS from 'aos';
 
 
  
 
 
 const Whychoose = () => {
+   const navigate = useNavigate();
    const imageRef = useRef();
   const [visible, setVisible] = useState(false);
 
@@ -78,7 +80,9 @@ const Whychoose = () => {
 
       <div className="DiscoverMorebtn">
         <button className="btn btn-outline">
-          <a href="#">Discover More</a>
+          <Link className="nav-link " to="/companion/exploreride">
+                          Discover More
+                        </Link>
         </button>
       </div>
     </div>

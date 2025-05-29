@@ -86,6 +86,7 @@
 
 .DiscoverMorebtn button:hover {
   background-color: #6ecdf0;
+  color: white;
 }
 
 .DiscoverMorebtn button a {

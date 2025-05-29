@@ -9,14 +9,14 @@ const Footer = () => {
         <div className="row gy-4 footerrow">
 
           <div className="col-12 col-sm-12 col-md-6 col-lg-4 text-center text-lg-start footercol1">
-            <div className="d-flex justify-content-center justify-content-lg-start align-items-center mb-2">
+            <div className="d-flex justify-content-start justify-content-lg-start align-items-center mb-2">
               <img src={companion_white} alt="logo" className="me-2 footerlogo" style={{ width: '50px' }} />
             </div>
-            <p className="companiontext mt-3">
+            <p className="companiontext text-start mt-3">
 At Companion, we’re dedicated to making every adventure safer and more meaningful — built on the foundation of trust, connection, and care.            </p>
           </div>
 
-          <div className="col-6 col-md-6 col-lg-3 text-center text-lg-start footercol2">
+          <div className="col-6 col-md-6 col-lg-3 text-lg-start footercol2">
             <p className="footersubhead">Quick Links</p>
             <div className="links">
               <p><a href="#">About</a></p>
@@ -26,7 +26,7 @@ At Companion, we’re dedicated to making every adventure safer and more meaning
             </div>
           </div>
 
-          <div className="col-6 col-md-6 col-lg-2 text-center text-lg-start footercol3">
+          <div className="col-6 col-md-6 col-lg-2  text-lg-start footercol3">
             <p className="footersubhead">Contact Info</p>
             <div className="links2">
               <p><i className="bi bi-telephone-fill me-1"></i> +91 70000 12222</p>
@@ -36,7 +36,7 @@ At Companion, we’re dedicated to making every adventure safer and more meaning
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-lg-3 text-end text-lg-start footercol4">
+          <div className="col-12 col-md-6 col-lg-3 text-end  footercol4">
             <p className="footersubhead ">Connect With Us</p>
             <div className="d-flex     gap-5 social-icon flex-wrap mt-4 ">
               <a href="#"><i className="bi bi-instagram fs-5"></i></a>

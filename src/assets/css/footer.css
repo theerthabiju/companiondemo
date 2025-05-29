@@ -10,6 +10,8 @@
   color: white;
   margin-bottom: 0px !important;
   margin-top: 20PX;
+      text-align: start !important;
+
 }
 .footerlogo{
   margin-top: 15px;
@@ -25,7 +27,7 @@
 
 .links,
 .links2 {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .links p,
@@ -76,11 +78,11 @@
   .companiontext,
   .links p,
   .links2 p {
-    text-align: center;
+    text-align: start;
   }
 
   .social-icon {
-    justify-content: center !important;
+    justify-content: start !important;
   }
 
   .social-icon a {
@@ -92,4 +94,11 @@
   .copyrightrow p {
     font-size: 11px;
   }
+  .footersubhead {
+
+    text-align: start !important;
+}
+.links, .links2 {
+    margin-top: 17px;
+}
 }
