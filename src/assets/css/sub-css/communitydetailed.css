@@ -1,0 +1,140 @@
+.communitydetailedcontainer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.upcomingcardride-route{
+    font-size: 12px;
+    color: #008CC0;
+}
+.upcominghead1 , .upcominghead2{
+    overflow-y: hidden;
+    font-weight: 600;
+    font-size: 38px;
+    color: #24C6FE;
+}
+.communitycardbody{
+    padding: 20px !important;
+    padding-top: 0 !important;
+}
+ .membersearch input {
+width: 100%;
+  transition: all 0.3s ease;
+}
+.membersearch input:focus {
+outline: none !important;
+border: none;
+}
+.totalmember{
+    font-size: 13px !important;
+    color: gray;
+    margin-left: 15px;
+}
+.memberaddbtn{
+    background-color: #008CC0 !important;
+}
+.upcomingcardoverlay{
+    background-color: white;
+    box-shadow: 0 1px rgba(146, 146, 146, 0.11);
+    position: relative;
+    place-items: center;
+    bottom: 30px;
+    left: 100px;
+    padding: 15px;
+    width: 50%;
+    border-radius: 30px;
+}
+.upcomingtext{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.582);
+}
+.upcomingcard-img{
+        height: 220px;
+}
+.upcomingtext p{
+margin-bottom: 5px;
+}
+.upcomingmail , .upcomingnumber{
+font-size: 14px;
+    color: rgba(0, 0, 0, 0.363);
+
+}
+.chatrow  p{
+    font-size: 12px;
+        color: rgba(0, 0, 0, 0.363);
+
+}
+.addmember .btn{
+    font-size: 14px;
+    color: #008CC0;
+}
+.memberlist li {
+    font-size: 14px;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.61);
+}
+.leadmore{
+    font-size: 12px;
+    color: #008CC0;
+}
+.bulletsocialmedias a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #008CC0;
+}
+.upcominghead12{
+    overflow-y: hidden;
+    color: #24C6FE;
+    margin-bottom: 10px;
+}
+.uploadphotobtn{
+    background-color: #008CC0 !important;
+    color: white !important;
+}
+.galleryimgcard {
+  height: auto;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.galleryimg {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.galleryheadrow2 {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.uploadername, .uploaderdate {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.438);
+  margin: 0;
+}
+.galleryheadrow2 {
+  padding-bottom: 80px; 
+}
+
+.slick-dots {
+  position: relative;
+  bottom: 0px !important;
+  top: 310px;
+  display: block !important;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.slick-dots li button:before {
+  color: #008CC0;  
+  font-size: 12px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #24C6FE;
+}

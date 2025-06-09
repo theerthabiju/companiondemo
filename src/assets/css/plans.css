@@ -2,16 +2,17 @@
     background-color: #E9F9FF;
 }
 .planscontainer{
-margin-top: 80px;
+margin-top: 60px;
 margin-bottom: 90px;
   padding: 60px;
 
 }
 .planhead{
    font-size: 46px;
-   font-weight: bold;
+   font-weight: 700;
    overflow-y: hidden;
 }
+
 .plansub{
      font-size: 14px;
      text-align: center;

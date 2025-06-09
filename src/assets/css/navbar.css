@@ -7,7 +7,10 @@ overflow-x: hidden !important;
   background-color: #ffffff !important;
   
 }
-
+.brand-name{
+  font-size: 20PX;
+  font-weight: 600;
+}
 .findaridebtn {
   background-color: #24c6fe !important;
   border: none !important;
@@ -27,6 +30,15 @@ overflow-x: hidden !important;
   width: 40px;
   height: auto;
 }
+
+.profileicon{
+  color: #24c6fe !important;
+  border: none !important;
+  outline: none !important;
+}
+
+
+
 @media (max-width: 1439px) {
 .nav-link {
   margin-left: 5px;
@@ -64,4 +76,47 @@ overflow-x: hidden !important;
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' fill='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
+}
+
+
+.custom-dropdown-panel {
+  position: absolute;
+  top: 60px; /* adjust based on navbar height */
+  left: 45%;
+  background: white;
+  z-index: 1050;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 10px;
+  color: #000000d8;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #24c6fe;
+}
+
+.custom-dropdown-panel ul{
+  padding: 10px;
+
+  padding: 0 !important;
+
+}
+
+.dropdown-link:hover {
+  background-color: #f0f0f0;
+  color: #000;
 }

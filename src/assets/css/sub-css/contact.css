@@ -1,0 +1,140 @@
+.contactcontainer {
+  padding: 3rem 1rem;
+  margin-top: 80px;
+  margin-bottom: 80px !important;
+}
+
+.contactrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.contactcol {
+  background-color: #8ddfff38;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  text-align: center;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.contactcol i {
+  font-size: 2rem;
+  color: #0085b9;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+
+.contact-form-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactform-title {
+  text-align: center;
+  color: #0085b9;
+  margin-bottom: 1.5rem;
+  overflow-y: hidden;
+}
+
+.contactform-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.contactform-group {
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.contactform-group.full-width {
+  flex: 1 1 100%;
+}
+
+.contactform-group label {
+  color: #007bb0;
+}
+
+.contactform-group input,
+.contactform-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.error-text {
+  color: rgb(180, 0, 0);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.contactformsubmit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0085b9;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.contactformsubmit-btn:hover {
+  background: #007bb0;
+}
+
+@media (max-width: 768px) {
+  .contactform-group {
+    flex: 1 1 100%;
+  }
+
+  .contactcol {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .contact-form-wrapper {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+
+  .contactcontainer {
+    padding: 1rem 0.5rem;
+  }
+
+  .contactcol {
+    padding: 1rem;
+  }
+
+  .contactformsubmit-btn {
+    font-size: 1rem;
+  }
+}

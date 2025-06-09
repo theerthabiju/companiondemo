@@ -1,6 +1,6 @@
 .tentbannercontainer {
   width: 100%;
-  height: 500px;
+  height: 500px !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,20 +9,32 @@
   padding-top: 50px;
 }
 
+.headandsubheadbanner {
+  overflow-y: hidden;
+}
+
 .tentbanneroverlay {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.233);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.currentsub {
+  position: relative;
+  color: rgba(255, 255, 255, 0.788);
+  top: -40px;
+}
+
 .tentbannerhead {
+  border-radius: 20px;
+  padding: 40px;
   color: rgba(255, 255, 255, 0.699);
-  font-size: 48px;
+  font-size: 3vw;
   font-weight: bold;
   z-index: 1;
   overflow-y: hidden;
@@ -31,7 +43,7 @@
 .breadcrumbnav {
   position: absolute;
   bottom: 20px;
-  left: 30px;
+  left: 5px;
   z-index: 1;
 }
 
@@ -41,6 +53,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .breadcrumbitem a {
@@ -48,22 +61,28 @@
   text-decoration: none;
   font-weight: 500;
 }
+
 .breadcrumbarrow {
   color: #fff;
   padding-top: 5px;
 }
+
 .breadcrumbitem {
   background-color: #00bfff;
-  border-top-right-radius: 20px;
-  padding: 5px;
-  width: 100px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  white-space: nowrap;
 }
+
 .tentcontainer2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   margin-top: 60px;
   margin-bottom: 130px;
+  padding: 0 15px;
 }
+
 .tenttextheading {
   color: rgba(0, 0, 0, 0.644);
   margin-top: 80px;
@@ -71,13 +90,15 @@
   overflow-y: hidden;
   text-align: center;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 6vw;
 }
+
 .tenttextparagraph {
   font-size: 14px;
   text-align: center;
   margin-bottom: 30px;
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -90,17 +111,21 @@
   justify-content: center;
   z-index: 999;
 }
-.modaltext{
+
+.modaltext {
   overflow-y: hidden;
   color: #0098ca;
 }
-.modalbtn{
+
+.modalbtn {
   background-color: #0098ca !important;
   color: white !important;
 }
-.modal-backdrop{
+
+.modal-backdrop {
   background-color: #c9c9c969 !important;
 }
+
 .modal-content.tent-modal {
   background: #fff;
   padding: 20px;
@@ -121,36 +146,22 @@
   justify-content: center;
   margin-top: 1rem;
 }
+
 .tentlocations {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 5px;
-  gap: 10px;
-}
-.tentlocations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.tentspottext{
-      color: #24C6FE;
-    font-weight: bold;
-    overflow-y: hidden;
-        font-size: 48px;
-}
-.location {
-  padding: 10px 15px;
-  background-color: #eaf8ff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 0 10px;
 }
 
-.pagination-buttons button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+.tentspottext {
+  color: #24C6FE;
+  font-weight: bold;
+  overflow-y: hidden;
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .location {
@@ -165,24 +176,29 @@
   height: 50px;
   font-size: 14px;
   color: rgba(53, 53, 53, 0.719);
-}
-.tent-addbar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0px 0;
+  cursor: pointer;
 }
 
-.tent-searchbar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0px 0;
-}
 .location i {
   margin-right: 10px;
 }
-.tent-input {
+
+.pagination-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tent-addbar,
+.tent-searchbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tent-input,
+.tentsearch-input {
   flex: 1;
   max-width: 100%;
   padding: 10px 12px;
@@ -193,21 +209,9 @@
   font-size: 16px;
   outline: none;
 }
-.tentsearch-input {
-  flex: 1;
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #ffffff;
-  border-radius: 6px;
-  background-color: #4abbe0;
-  color: white;
-  font-size: 16px;
-  outline: none;
-}
-.tentsearch-inputt::placeholder {
-  color: white !important;
-}
-.tent-input::placeholder {
+
+.tent-input::placeholder,
+.tentsearch-input::placeholder {
   color: white;
 }
 
@@ -222,10 +226,70 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
+
 .tent-add-btn img {
   width: 25px;
 }
+
 .tent-add-btn:hover {
   background-color: #beebfa;
+}
+
+.readnowblogbtn,
+.readnowblogbtn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+
+  .tentlocations {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tent-addbar,
+  .tent-searchbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tentbannercontainer {
+    height: 400px;
+  }
+
+  .tenttextheading,
+  .tentspottext {
+    font-size: 36px;
+  }
+
+  .tent-add-btn {
+    width: auto;
+  }
+
+  .breadcrumbitem {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+   .tentbannerhead{
+font-size: 28px !important;
+  }
+}
+ 
+@media (min-width: 1024px) {
+  .tentlocations {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .tentbannercontainer {
+    height: 500px;
+  }
+
+  .tenttextheading,
+  .tentspottext {
+    font-size: 48px;
+  }
 }

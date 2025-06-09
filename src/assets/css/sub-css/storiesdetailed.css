@@ -1,0 +1,52 @@
+.storydetailedcontainer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.blogimg{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+.blogtitle{
+    margin-top: 30px;
+    overflow-y: hidden;
+    color: #008CC0;
+}
+.writer{
+    font-size: 14px;
+     overflow-y: hidden;
+    color: #88888888;
+}
+.blogsubhead{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+    color: #008CC0;
+    font-weight: 700;
+}
+.blogsubhead2{
+     overflow-y: hidden;
+    color: #008CC0; 
+}
+.blogul li{
+    list-style: square ;
+}
+.blogcontents{
+    text-align: justify;
+}
+.blogcontents img{
+    border-radius: 20px;
+}
+.blogimg {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-top {
+  opacity: 1;
+  transform: translateY(0);
+}

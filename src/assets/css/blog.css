@@ -1,7 +1,19 @@
+  .blogsection{
+ background-image: url('../../assets/images/eventimg4.png');
+ width: 100%;
+    height: auto; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-top: 80px;
+      margin-bottom: 0px;
+
+  } 
 .blogcontainer {
-  margin-top: 80px;
-  margin-bottom: 80px;
-    padding: 60px;
+ 
+    padding: 80px;
 
 }
 .blogbtn {
@@ -9,6 +21,7 @@
   border-radius: 20px !important;
   width: 150px !important;
 }
+
 
 .blogcard {
   border-radius: 34px !important;
@@ -18,7 +31,7 @@
   width: 100%;
   max-width: 90%;
   height: auto;
-  
+  margin: auto;
 }
 .blogcard:hover {
   transform: translate(3px);

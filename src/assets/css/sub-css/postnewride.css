@@ -6,7 +6,6 @@
   overflow-y: hidden;
   color: #2727276c;
   font-weight: 600;
-  font-size: 22px;
 }
 .hrhead{
   color: #008dc096;
@@ -123,4 +122,19 @@
 .suggestions-list li:hover {
   background-color: #f0f0f0;
 }
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.slide-down {
+  animation: slideInDown 0.8s ease-out forwards;
+}
+
 

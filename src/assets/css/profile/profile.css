@@ -1,0 +1,148 @@
+.profilecontainer{
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+
+.profile-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-sidebar {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background-color: #58caf325;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-sidebar h3 {
+  margin-bottom: 1rem;
+  font-size: 28px;
+  color: #008CC0;
+  overflow-y: hidden;
+}
+
+.profile-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-sidebar li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-sidebar li.active {
+  font-weight: bold;
+  color: #007ba8;
+}
+
+.profile-content {
+  flex: 3 1 500px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  min-height: 300px;
+}
+.profile-content-card{
+    padding: 40px;
+}
+
+.profile-content-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #0076a5;
+  overflow-y: hidden;
+}
+.profile-image-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  cursor: pointer;
+}
+
+.edit-icon-overlay {
+  position: absolute;
+  right:75%;
+  width: 40PX;
+  height: 30PX;
+  background: #0076a5;
+  color: white;
+text-align: center;
+padding: 5px;
+  border-radius: 0%;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.save-btn {
+  margin-top: 10px;
+  margin: 10px;
+  padding: 6px 14px;
+  background-color: #0587bb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #83d3f3;
+}
+
+
+
+
+.profile-content-card input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.profile-edit-btn {
+  padding: 6px 12px;
+  margin-top: 10px;
+ background-color: #0587bb;
+  color: white;  border: none;
+  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-edit-btn:hover {
+  background-color: #83d3f3;
+}
+
+.logout-btn:hover {
+  color: #0587bb !important;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .profile-wrapper {
+    flex-direction: column;
+  }
+
+  .profile-sidebar,
+  .profile-content {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -11,7 +11,7 @@ const Plans = () => {
   return (
     <section className='planssection'>
            <div className='container planscontainer'>
-      <h3 className='planhead text-center'>OUR INVESTMENT PLANS</h3>
+      <h3 className='planhead text-center'>OUR INVESTMENT PLANS </h3>
       <p className='plansub'>Companion provides a straightforward and transparent mechanism to attract investments and <br /> make more profits</p>
 <div className='plancards row'>
     <div className='col-md-4'>

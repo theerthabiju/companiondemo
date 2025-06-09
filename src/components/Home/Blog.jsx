@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate, Link } from "react-router-dom";
 import "../../assets/css/blog.css" ;
 import blogimg1 from "../../assets/images/blogimg1.png";
 import blogimg2 from "../../assets/images/blogimg2.png";
@@ -9,8 +10,11 @@ import blogimg3 from "../../assets/images/blogimg3.png";
 
 
 const Blog = () => {
+    const navigate = useNavigate();
+
   return (
-   <div className='container blogcontainer'>
+    <div className='blogsection'>
+  <div className='container blogcontainer'>
   <div className=' mb-4'>
     <button className='btn btn-outline blogbtn'>BLOG</button>
     <h3 className='blogtext1 text-start mt-4'>News & Articles</h3>
@@ -23,8 +27,10 @@ const Blog = () => {
         <div className='blogcard-body'>
           <p className='blogdate'>Jul 10, 2024</p>
           <p className='blogtext'>Rapidiously myocardinate cross-platform intellectual capital model.</p>
- <button className='btn btn-outline blogreadmorebtn'><a href="#" >Read More   <i className="bi bi-arrow-right-short blogarrow"></i></a>
-          </button> 
+
+           <Link className='btn btn-outline blogreadmorebtn' to="/companion/Blogs">
+                   Read More  <i className="bi bi-arrow-right-short blogarrow"></i>
+                </Link>
                   </div>
       </div>
     </div>
@@ -34,8 +40,9 @@ const Blog = () => {
         <div className='blogcard-body'>
           <p className='blogdate'>Jul 10, 2024</p>
           <p className='blogtext'>Rapidiously myocardinate cross-platform intellectual capital model.</p>
- <button className='btn btn-outline blogreadmorebtn'><a href="#" >Read More   <i className="bi bi-arrow-right-short blogarrow"></i></a>
-          </button>        
+  <Link className='btn btn-outline blogreadmorebtn' to="/companion/Blogs">
+                   Read More  <i className="bi bi-arrow-right-short blogarrow"></i>
+                </Link>     
            </div>
       </div>
     </div>
@@ -45,15 +52,20 @@ const Blog = () => {
         <div className='blogcard-body'>
           <p className='blogdate'>Jul 10, 2024</p>
           <p className='blogtext'>Rapidiously myocardinate cross-platform intellectual capital model.</p>
-         <button className='btn btn-outline blogreadmorebtn'><a href="#" >Read More   <i className="bi bi-arrow-right-short blogarrow"></i></a>
-          </button> 
+         <Link className='btn btn-outline blogreadmorebtn' to="/companion/Blogs">
+                   Read More  <i className="bi bi-arrow-right-short blogarrow"></i>
+                </Link> 
         </div>
       </div>
     </div>
   </div>
 </div>
+    </div>
+ 
 
   )
 }
 
 export default Blog
+
+

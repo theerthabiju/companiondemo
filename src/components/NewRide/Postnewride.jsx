@@ -103,7 +103,8 @@ const Postnewride = () => {
     <div className='container postnewridecontainer'>
       <h3 className='postridehead'>Create New Ride</h3>
       <span className='hrhead'><hr /></span>
-      <h3 className='text-center newposthead mt-5 mb-3'>
+      <div className='slide-down'>
+  <h3 className='text-center newposthead mt-5 mb-3'>
         Start Your Journey <br />
         <span className='newpostheadhighlight'>Share a Ride, Build Connections</span>
       </h3>
@@ -111,6 +112,8 @@ const Postnewride = () => {
         Provide accurate pickup and drop-off locations, along with the date and time of the journey.
         Specify the number of available seats and fare per seat. Don’t forget to add vehicle and driver details.
       </p>
+      </div>
+    
 
       <div className="form-section">
         <form className="postride-form" onSubmit={handleSubmit}>

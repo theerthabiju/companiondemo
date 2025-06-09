@@ -1,0 +1,294 @@
+.storiescontainer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 15px;
+}
+.blogcards{
+  margin-top: -100px;
+}
+.storieshead {
+  color: #2727276c;
+  font-weight: 600;
+  overflow-y: hidden;
+}
+
+.hrhead hr {
+  color: #008dc096;
+}
+
+.custom-storysearch-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #008dc096;
+  border-radius: 15px;
+}
+
+.custom-storysearch-input:focus {
+  outline: none;
+}
+
+.storycard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 40px 0;
+}
+.storycardslide{
+ background-color: #008cc0;
+}
+.storycard1,
+.storycard2,
+.storycard3 {
+  border-radius: 20px !important;
+  border: none !important;
+  flex: 0 0 32%;
+  min-width: 280px;
+  padding: 16px;
+  color: white;
+}
+
+.storycard1 {
+  background-color: #279cc8 !important;
+}
+.storycard2 {
+  background-color: #008cc0 !important;
+}
+.storycard3 {
+  background-color: #5db9db !important;
+}
+
+.story1head {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  overflow-y: hidden;
+}
+
+.writername {
+  color: rgba(245, 245, 245, 0.6);
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.readnowblogbtn,
+.readnowblogbtn2 {
+  background-color: white !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.storyheadcol2 img {
+  width: 100%;
+  max-width: 160px;
+  margin-top: 20px;
+}
+
+.storybg2 {
+  margin: 20px 0;
+}
+
+.storybg3 {
+  margin-top: 30px !important;
+  max-width: 180px !important;
+}
+
+.storybg {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+}
+.centertext {
+  overflow-y: hidden;
+  font-size: 36px;
+  font-weight: 600;
+  overflow-y: hidden;
+}
+.centertext-overlay {
+  overflow-y: hidden;
+
+  position: relative;
+  top: 240px;
+  bottom: 0;
+}
+.overlay-story1 {
+  position: relative;
+  top: 230px;
+}
+.contactcol i{
+font-size: 40px;
+color: #008cc0;
+}
+.contactcol p{
+  margin: 0 !important;
+}
+.overlay-story2 {
+  position: relative;
+  bottom: 190px;
+    
+
+}
+
+.otherblogcard {
+  border: none !important;
+  bottom: 0 !important;
+}
+.otherblog-title h6 {
+  font-size: 14px;
+  font-weight: 700;
+  overflow-y: hidden;
+  text-align: start;
+}
+
+.otherblogimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.otherblog-overlay {
+  position: absolute;
+  bottom: 180px;
+  width: 100%;
+  background: rgba(209, 202, 202, 0);
+  padding: 30px;
+}
+.storyslider-container {
+  overflow: hidden;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .story1head {
+    font-size: 14px;
+  }
+
+  .readnowblogbtn,
+  .readnowblogbtn2 {
+    font-size: 12px !important;
+    padding: 4px 10px;
+  }
+
+  .otherblog-overlay {
+      position: absolute;
+  bottom: 80px;
+    top: auto !important;
+    bottom: 0;
+    font-size: 14px !important;
+    background: rgba(153, 0, 0, 0); /* light dark overlay */
+    padding: 30px;
+  }
+
+  .otherblog-title h6 {
+    font-size: 13px !important;
+    line-height: 1.2;
+  }
+
+  .writername {
+    font-size: 11px;
+  }
+
+  .otherblogimg {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .otherblogcard {
+    height: 100%;
+  }
+}
+@media (max-width: 445px) {
+.centertext{
+  overflow-y: hidden;
+}
+
+.otherblog-overlay {
+      position: absolute;
+  bottom: 80px;}
+}
+@media (max-width: 1399px) {
+  
+  .otherblog-overlay {
+      position: absolute;
+  bottom: 80px;}
+  .centertext {
+    overflow-y: hidden;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #008dc05e;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .centertext-overlay {
+    position: relative;
+    bottom: 100px;
+  }
+  .storybg {
+    display: none;
+  }
+  .storycard1,
+  .storycard2,
+  .storycard3 {
+    flex: 0 0 100%;
+  }
+
+  .story1head {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .writername {
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .storyheadcol2 img {
+    max-width: 120px;
+    margin-top: 10px;
+  }
+  .storyheadcol2 {
+    display: flex;
+    justify-content: center;
+  }
+  .overlay-story1,
+  .overlay-story2 {
+    position: static;
+  }
+
+  .storiesrow {
+    flex-direction: column;
+  }
+
+  .storiessearch {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .story1headcol1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .readnowblogbtn,
+  .readnowblogbtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: white !important;
+    border-radius: 30px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    padding: 6px 20px;
+    margin-top: 10px;
+  }
+}
+
+

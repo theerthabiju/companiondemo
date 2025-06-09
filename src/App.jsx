@@ -12,6 +12,13 @@ import Events from "./components/Specialfeature/Events";
 import About from "./components/AboutUs/About";
 import Exploreride from "./components/Exploreride/Exploreride";
 import Postnewride from "./components/NewRide/Postnewride";
+import Community from "./components/Community/Community";
+import Communitydetailed from "./components/Community/Communitydetailed";
+import AddCommunity from "./components/Community/AddCommunity";
+import Stories from "./components/Stories/Stories";
+import Contact from "./components/ContactUS/Contact";
+import Profile from "./components/profile/Profile";
+import Storiesdetailed from "./components/Stories/Storiesdetailed";
 
 const App = () => {
   return (
@@ -21,6 +28,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<Login />} />
           <Route path="/signup" element={<Sign />} />
+            <Route path="/Profile" element={<Profile/>} />
 
           <Route path="/companion" element={<Specialfeature />}>
             <Route index element={<Navigate to="tent" replace />} />
@@ -31,6 +39,18 @@ const App = () => {
             <Route path="aboutus" element={<About/>} />
             <Route path="Exploreride" element={<Exploreride/>} />
             <Route path="Postnewride" element={<Postnewride/>} />
+            <Route path="Community" element={<Community/>} />
+            <Route path="bulletclub" element={<Communitydetailed/>} />
+            <Route path="add-community" element={<AddCommunity/>} />
+            <Route path="Blogs" element={<Stories/>} />
+            <Route path="blogone" element={<Storiesdetailed/>} />
+            <Route path="Contact" element={<Contact/>} />
+
+
+
+
+
+
 
 
 
