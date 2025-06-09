@@ -8,7 +8,7 @@ import cc6 from "../../assets/images/cc6.png"
 import cc7 from "../../assets/images/cc7.png"
 import cc8 from "../../assets/images/cc8.png"
 import cc9 from "../../assets/images/cc9.png"
-import star from "../../assets/images/star.png"
+import Star from "../../assets/images/Star.png"
 
 
 
@@ -41,11 +41,11 @@ const Community = () => {
     <div className="communitycard-info">
       <span className="communitycardride-route text-center">Bullet Clubs</span>
       <div className='text-center'>
-      <img className='ratingstar' src={star} alt="star" /> 
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img  className='ratingstar' src={star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" /> 
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img  className='ratingstar' src={Star} alt="star" />
       </div>
     </div>
   </div>
@@ -76,11 +76,11 @@ const Community = () => {
     <div className="communitycard-info">
       <span className="communitycardride-route">Backpackers</span>
       <div className='text-center'>
-      <img className='ratingstar' src={star} alt="star" /> 
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img  className='ratingstar' src={star} alt="star" />
+      <img className='ratingstar' src={Star}alt="star" /> 
+      <img className='ratingstar' src={Star}alt="star" />
+      <img className='ratingstar' src={Star}alt="star" />
+      <img className='ratingstar' src={Star}alt="star" />
+      <img  className='ratingstar' src={Star}alt="star" />
       </div>
     </div>
   </div>
@@ -109,11 +109,11 @@ const Community = () => {
     <div className="communitycard-info">
       <span className="communitycardride-route">Wander Women Rides</span>
       <div className='text-center'>
-      <img className='ratingstar' src={star} alt="star" /> 
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img  className='ratingstar' src={star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" /> 
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img  className='ratingstar' src={Star} alt="star" />
       </div>
     </div>
   </div>
@@ -145,11 +145,11 @@ const Community = () => {
     <div className="communitycard-info">
       <span className="communitycardride-route text-center">Bus Tribes</span>
       <div className='text-center'>
-      <img className='ratingstar' src={star} alt="star" /> 
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img  className='ratingstar' src={star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" /> 
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img  className='ratingstar' src={Star} alt="star" />
       </div>
     </div>
   </div>
@@ -178,11 +178,11 @@ const Community = () => {
     <div className="communitycard-info">
       <span className="communitycardride-route">Campus Cruisers</span>
       <div className='text-center'>
-      <img className='ratingstar' src={star} alt="star" /> 
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img  className='ratingstar' src={star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" /> 
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img  className='ratingstar' src={Star} alt="star" />
       </div>
     </div>
   </div>
@@ -211,11 +211,11 @@ const Community = () => {
     <div className="communitycard-info">
       <span className="communitycardride-route">Off-Roaders</span>
       <div className='text-center'>
-      <img className='ratingstar' src={star} alt="star" /> 
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img className='ratingstar' src={star} alt="star" />
-      <img  className='ratingstar' src={star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" /> 
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img className='ratingstar' src={Star} alt="star" />
+      <img  className='ratingstar' src={Star} alt="star" />
       </div>
     </div>
   </div>
