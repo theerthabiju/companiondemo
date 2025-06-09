@@ -6,8 +6,7 @@ import logo from "../../assets/images/logo.png";
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const hideLoginBtn =
-    location.pathname === "/signin" || location.pathname === "/signup";
+  const hideLoginBtn = location.pathname === "/signin" || location.pathname === "/signup";
 
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
@@ -31,10 +30,10 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <a className="navbar-brand d-flex align-items-center" href="#">
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img src={logo} alt="Companion" className="logo-img" />
             <span className="brand-name ms-2">Companion</span>
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler custom-toggler"
@@ -48,88 +47,69 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            className="collapse navbar-collapse mobile-menu"
-            id="navbarSupportedContent"
-          >
+          <div className="collapse navbar-collapse mobile-menu" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-center">
               <li className="nav-item">
-                <Link className="nav-link text-black" to="/">
-                  Home
-                </Link>
+                <Link className="nav-link text-black" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link text-black"
-                  to="/companion/exploreride"
-                >
-                  ExploreRides
-                </Link>
+                <Link className="nav-link text-black" to="/companion/exploreride">Explore Rides</Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link text-black"
-                  to="/companion/postnewride"
-                >
-                  Post a New Ride
-                </Link>
+                <Link className="nav-link text-black" to="/companion/postnewride">Post a New Ride</Link>
               </li>
 
-              {/* Community with custom dropdown */}
+              {/* Community with dropdown */}
               <li className="nav-item position-relative">
-                <a
-                  style={{ cursor: "pointer" }}
+                <button
+                  type="button"
                   className="nav-link text-black bg-transparent border-0"
                   onClick={toggleDropdown}
+                  aria-expanded={showDropdown}
+                  aria-haspopup="true"
                 >
-                  Community <i class="bi bi-chevron-compact-down"></i>
-                </a>
+                  Community <i className="bi bi-chevron-compact-down"></i>
+                </button>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link text-black" to="/companion/Blogs">
-                  Stories
-                </Link>
+                <Link className="nav-link text-black" to="/companion/Blogs">Stories</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-black" to="/companion/aboutus">
-                  About Us
-                </Link>
+                <Link className="nav-link text-black" to="/companion/aboutus">About Us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-black" to="/companion/Contact">
-                  Contact Us
-                </Link>
+                <Link className="nav-link text-black" to="/companion/Contact">Contact Us</Link>
               </li>
             </ul>
 
             <div className="d-flex justify-content-center gap-2 mb-2 mb-lg-0">
-                 <button className="btn btn-outline profileicon">
-                {" "}
-                  <Link to="/Profile"><i className="bi bi-person-circle  profileicon"></i>
-                 
+              <button className="btn btn-outline profileicon">
+                <Link to="/Profile">
+                  <i className="bi bi-person-circle profileicon"></i>
                 </Link>
               </button>
+
               {!hideLoginBtn && (
                 <Link to="/signin" className="btn loginbtn text-black">
                   Login
                 </Link>
               )}
+
               <button className="btn findaridebtn text-white" type="button">
                 <Link className="nav-link" to="/companion/exploreride">
                   Find A Ride
                 </Link>
               </button>
-           
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Community Dropdown Panel */}
+      {/* Dropdown Panel for Community */}
       {showDropdown && (
-        <div className="custom-dropdown-panel " ref={dropdownRef}>
-          <ul className="list-unstyled m-0   text-center ">
+        <div className="custom-dropdown-panel" ref={dropdownRef}>
+          <ul className="list-unstyled m-0 text-center">
             <li>
               <Link className="dropdown-link" to="/companion/community">
                 Community List

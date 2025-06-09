@@ -79,7 +79,7 @@ const Whychoose = () => {
       </div>
 
       <div className="DiscoverMorebtn">
-        <button className="btn btn-outline">
+           <button className="btn btn-outline">
           <Link className="nav-link " to="/companion/aboutus">
                           Discover More
                         </Link>

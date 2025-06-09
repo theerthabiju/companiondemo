@@ -16,7 +16,6 @@ import { axiosInstance } from "../../util/AxiosInstance";
 import Pikaday from "pikaday";
 
 const Banner = () => {
-     const navigate = useNavigate();
   const baseUrl = import.meta.env.VITE_BASE_URL;
   console.log("Base URL:", baseUrl);
 
@@ -163,18 +162,12 @@ const Banner = () => {
             </div>
 
             <div className="form-actions">
-             <Link type="button" className="form-newridebtn" to="/companion/postnewride">
-                 
-Post A New Ride 
-               </Link>
+              <button type="button" className="form-newridebtn">Post A New Ride</button>
               <button type="submit" className="form-searchbtn">
                 <img src={Searchicon} alt="Searchicon" /> Search
               </button>
-        
-      <Link type="button" className="form-joinridebtn" to="/companion/exploreride">                
-Join A Ride
-</Link>
- </div>
+              <button type="button" className="form-joinridebtn">Join A Ride</button>
+            </div>
           </form>
 
           <div className="how-it-works">
