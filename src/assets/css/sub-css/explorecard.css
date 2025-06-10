@@ -186,6 +186,17 @@
 .applyfilterbtn:hover{
     background-color: #6dd8ffe7 !important;
 }
+
+.price {
+  font-weight: bold;
+  color: #00bbff8f;
+}
+
+.passengers {
+  color:  #00bbff8f;
+  font-size: 14px;
+}
+
 @media (max-width: 992px) {
   .filter-sidebar {
     position: fixed;
