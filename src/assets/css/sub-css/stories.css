@@ -15,7 +15,18 @@
 .hrhead hr {
   color: #008dc096;
 }
+.custom-storysearch-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.loadmoreblog{
+  color: #008cc0 !important;
+    outline: none !important;
+    border: none !important;
 
+}
 .custom-storysearch-input {
   width: 100%;
   padding: 8px 12px;

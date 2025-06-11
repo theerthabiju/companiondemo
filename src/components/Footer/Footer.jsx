@@ -55,7 +55,6 @@ const Footer = () => {
             <p className="footersubhead">Connect With Us</p>
             <div className="d-flex gap-5 social-icon flex-wrap mt-4">
               <a href="#"><i className="bi bi-instagram fs-5"></i></a>
-              <a href="#"><i className="bi bi-twitter fs-5"></i></a>
               <a href="#"><i className="bi bi-facebook fs-5"></i></a>
               <a href="#"><i className="bi bi-envelope-fill fs-5"></i></a>
             </div>
