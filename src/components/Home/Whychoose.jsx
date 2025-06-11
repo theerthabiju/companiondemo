@@ -73,7 +73,7 @@ const Whychoose = () => {
 
       <div className="row verticalrow mb-4 d-flex align-items-center">
         <div className="col-8 d-flex align-items-center">
-          <span className="vertical-text me-2">EXPERIENCE<br />SINCE YEAR</span>
+          <span className="vertical-text me-2">EXPERIENCE<br/>SINCE YEAR</span>
           <img className="yearimg" src={year} alt="2025year" />
         </div>
       </div>

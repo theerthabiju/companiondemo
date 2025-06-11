@@ -64,7 +64,7 @@
   writing-mode: vertical-rl !important;
   text-orientation: mixed !important;
   transform: rotate(180deg) !important;
-  font-size: 12px !important;
+  font-size: 10px !important;
   font-weight: bold !important;
   color: #00000080 !important;
 }
@@ -109,11 +109,12 @@
   }
 
   .vertical-text {
-    writing-mode: horizontal-tb !important;
+    writing-mode: vertical-rl !important;
     transform: none !important;
-    font-size: 10px !important;
+    font-size: 9px !important;
     text-align: start;
     margin-bottom: 0px;
+    padding: 10px;
     display: block;
   }
 
