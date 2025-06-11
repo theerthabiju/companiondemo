@@ -30,14 +30,26 @@ overflow-x: hidden !important;
   width: 40px;
   height: auto;
 }
-
+.loginhomebtn{
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+}
+.profileiconpara{
+  display: flex;
+  justify-content: flex-start;
+}
 .profileicon{
   color: #24c6fe !important;
+border-radius: 10px;
   border: none !important;
   outline: none !important;
 }
 
-
+#communityid{
+position: relative;
+left: 0px;
+}
 
 @media (max-width: 1439px) {
 .nav-link {
@@ -62,10 +74,11 @@ overflow-x: hidden !important;
     border-radius: 8px;
   }
 
+
   .mobile-menu .nav-link {
     padding: 0.5rem 1rem;
     margin: 5px 0;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .custom-toggler {
@@ -76,18 +89,24 @@ overflow-x: hidden !important;
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' fill='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-}
 
+}
 
 .custom-dropdown-panel {
-  position: absolute;
-  top: 60px; /* adjust based on navbar height */
+  position: fixed; /* Make it stick to the screen */
+  top: 60px; /* Adjust to match navbar height */
   left: 45%;
-  background: white;
+  width: 10%;
+  background: #fff;
   z-index: 1050;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  animation: slideDown 0.2s ease;
+  border-top: 1px solid #eee;
+    animation: slideDown 0.2s ease;
+
 }
+
+
+
 
 @keyframes slideDown {
   from {
@@ -111,7 +130,6 @@ overflow-x: hidden !important;
 
 .custom-dropdown-panel ul{
   padding: 10px;
-
   padding: 0 !important;
 
 }
