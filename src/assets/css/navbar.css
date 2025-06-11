@@ -93,10 +93,9 @@ left: 0px;
 }
 
 .custom-dropdown-panel {
-  position: fixed; /* Make it stick to the screen */
-  top: 60px; /* Adjust to match navbar height */
+  position: fixed; 
+  top: 60px; 
   left: 45%;
-  width: 10%;
   background: #fff;
   z-index: 1050;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
