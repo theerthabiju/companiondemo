@@ -1,94 +1,95 @@
-.communitydetailedcontainer{
-    margin-top: 80px;
-    margin-bottom: 80px;
+.communitydetailedcontainer {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-.upcomingcardride-route{
-    font-size: 12px;
-    color: #008CC0;
+.upcomingcardride-route {
+  font-size: 12px;
+  color: #008cc0;
 }
-.upcominghead1 , .upcominghead2{
-    overflow-y: hidden;
-    font-weight: 600;
-    font-size: 38px;
-    color: #24C6FE;
+.upcominghead1,
+.upcominghead2 {
+  overflow-y: hidden;
+  font-weight: 600;
+  font-size: 38px;
+  color: #24c6fe;
 }
-.communitycardbody{
-    padding: 20px !important;
-    padding-top: 0 !important;
+.communitycardbody {
+  padding: 20px !important;
+  padding-top: 0 !important;
 }
- .membersearch input {
-width: 100%;
+.membersearch input {
+  width: 100%;
   transition: all 0.3s ease;
 }
 .membersearch input:focus {
-outline: none !important;
-border: none;
+  outline: none !important;
+  border: none;
 }
-.totalmember{
-    font-size: 13px !important;
-    color: gray;
-    margin-left: 15px;
+.totalmember {
+  font-size: 13px !important;
+  color: gray;
+  margin-left: 15px;
 }
-.memberaddbtn{
-    background-color: #008CC0 !important;
+.memberaddbtn {
+  background-color: #008cc0 !important;
 }
-.upcomingcardoverlay{
-    background-color: white;
-    box-shadow: 0 1px rgba(146, 146, 146, 0.11);
-    position: relative;
-    place-items: center;
-    bottom: 30px;
-    left: 100px;
-    padding: 15px;
-    width: 50%;
-    border-radius: 30px;
+.upcomingcardoverlay {
+  background-color: white;
+  box-shadow: 0 1px rgba(146, 146, 146, 0.11);
+  position: relative;
+  place-items: center;
+  bottom: 30px;
+  left: 100px;
+  padding: 15px;
+  width: 50%;
+  border-radius: 30px;
 }
-.upcomingtext{
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.582);
+.upcomingtext {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.582);
 }
-.upcomingcard-img{
-        height: 220px;
+.upcomingcard-img {
+  height: 220px;
 }
-.upcomingtext p{
-margin-bottom: 5px;
+.upcomingtext p {
+  margin-bottom: 5px;
 }
-.upcomingmail , .upcomingnumber{
-font-size: 14px;
-    color: rgba(0, 0, 0, 0.363);
-
+.upcomingmail,
+.upcomingnumber {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.363);
 }
-.chatrow  p{
-    font-size: 12px;
-        color: rgba(0, 0, 0, 0.363);
-
+.chatrow p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.363);
 }
-.addmember .btn{
-    font-size: 14px;
-    color: #008CC0;
+.addmember .btn {
+  font-size: 14px;
+  color: #008cc0;
+  text-align: start;
 }
 .memberlist li {
-    font-size: 14px;
-    margin: 10px;
-    color: rgba(0, 0, 0, 0.61);
+  font-size: 14px;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.61);
 }
-.leadmore{
-    font-size: 12px;
-    color: #008CC0;
+.leadmore {
+  font-size: 12px;
+  color: #008cc0;
 }
-.bulletsocialmedias a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #008CC0;
+.bulletsocialmedias a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #008cc0;
 }
-.upcominghead12{
-    overflow-y: hidden;
-    color: #24C6FE;
-    margin-bottom: 10px;
+.upcominghead12 {
+  overflow-y: hidden;
+  color: #24c6fe;
+  margin-bottom: 10px;
 }
-.uploadphotobtn{
-    background-color: #008CC0 !important;
-    color: white !important;
+.uploadphotobtn {
+  background-color: #008cc0 !important;
+  color: white !important;
 }
 .galleryimgcard {
   height: auto;
@@ -110,14 +111,15 @@ font-size: 14px;
   overflow-x: hidden;
 }
 
-.uploadername, .uploaderdate {
+.uploadername,
+.uploaderdate {
   text-align: center;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.438);
   margin: 0;
 }
 .galleryheadrow2 {
-  padding-bottom: 80px; 
+  padding-bottom: 80px;
 }
 
 .slick-dots {
@@ -130,11 +132,130 @@ font-size: 14px;
 }
 
 .slick-dots li button:before {
-  color: #008CC0;  
+  color: #008cc0;
   font-size: 12px;
   opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #24C6FE;
+  color: #24c6fe;
+}
+/* Tablet and Below (max-width: 992px) */
+@media (max-width: 992px) {
+  .upcominghead1 {
+    font-size: 26px !important;
+    text-align: center;
+  }
+  .upcominghead2 {
+    display: none;
+  }
+  .upcomingcardoverlay {
+    width: 80%;
+    left: 10%;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .upcomingcard-img {
+    height: 200px;
+  }
+
+  .uploadphotobtn {
+    font-size: 14px;
+    padding: 8px 14px;
+    width: 100%;
+  }
+
+  .galleryimg {
+    height: 180px;
+  }
+
+  .slick-dots {
+    top: 270px;
+  }
+
+  .totalmember {
+    margin-left: 0;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .upcominghead1,
+  .upcominghead2 {
+    font-size: 24px;
+  }
+
+  .upcomingcard-img {
+    height: 180px;
+  }
+
+  .upcomingcardoverlay {
+    width: 90%;
+    left: 5%;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .upcomingtext,
+  .upcomingtext p,
+  .upcomingmail,
+  .upcomingnumber {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .chatrow p {
+    font-size: 11px;
+  }
+
+  .galleryimg {
+    height: 160px;
+  }
+
+  .galleryheadrow2 {
+    padding-bottom: 50px;
+  }
+
+  .slick-dots {
+    top: 230px;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .upcominghead1,
+  .upcominghead2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .upcomingcardoverlay {
+    width: 95%;
+    left: 2.5%;
+    bottom: 5px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+
+  .uploadphotobtn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .galleryimg {
+    height: 140px;
+  }
+
+  .memberlist li {
+    font-size: 12px;
+    margin: 6px;
+  }
+
+  .slick-dots {
+    top: 200px;
+  }
 }

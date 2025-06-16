@@ -93,7 +93,7 @@ const Profile = () => {
     if (activeTab === 'Posts') {
       return (
         <div className="profile-content-card">
-          <h2>Your Posts</h2>
+          <h2>Your community</h2>
           <p>No Post yet</p>
         </div>
       );
@@ -118,7 +118,7 @@ const Profile = () => {
           <h3>My Account</h3>
           <ul>
             <li onClick={() => setActiveTab('account')} className={activeTab === 'account' ? 'active' : ''}>Profile Info</li>
-            <li onClick={() => setActiveTab('Posts')} className={activeTab === 'Posts' ? 'active' : ''}>My Posts</li>
+            <li onClick={() => setActiveTab('Posts')} className={activeTab === 'Posts' ? 'active' : ''}>My community</li>
             <li onClick={() => setActiveTab('Rides')} className={activeTab === 'Rides' ? 'active' : ''}>Rides</li>
             <li className="logout-btn mt-4" onClick={handleLogout} style={{ color: '#0587bb', cursor: 'pointer' }}>
               Logout

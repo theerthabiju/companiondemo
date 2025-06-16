@@ -89,76 +89,64 @@ const Communitydetailed = () => {
 
   return (
     <div className='container communitydetailedcontainer'>
-      {/* Upcoming Ride Plans Header */}
       <div className='row upcominghead'>
-        <h3 className='col-md-6 upcominghead1'>Upcoming Ride Plans</h3>
-        <h3 className='col-md-6 upcominghead2 text-end'>Members</h3>
+        <h3 className='col-md-6 upcominghead1 text-center text-md-start'>Upcoming Ride Plans</h3>
+        <h3 className='col-md-6 upcominghead2 text-center text-md-end'>Members</h3>
       </div>
       <span className='hrhead'><hr /></span>
 
-      <div className='row communityrow'>
-        {/* Ride Plan Cards (Example Card Repeated) */}
+      <div className='row communityrow gy-4'>
         {[...Array(2)].map((_, i) => (
-          <div className='col-md-4' key={i}>
+          <div className='col-12 col-md-6 col-lg-4' key={i}>
             <div className="communitycard">
-              <img className="upcomingcard-img" src={filter4} alt="Destination" />
+              <img className="upcomingcard-img img-fluid" src={filter4} alt="Destination" />
               <div className="upcomingcardoverlay">
-                <div className="upcomingcard-info">
-                  <span className="upcomingcardride-route text-center">Kalpetta → Bangalore</span>
-                </div>
+                <span className="upcomingcardride-route text-center">Kalpetta → Bangalore</span>
               </div>
               <div className="card-body communitycardbody">
-                <div className='upcomingtext row d-flex'>
-                  <div className='col-md-6'>
+                <div className='upcomingtext row'>
+                  <div className='col-6'>
                     <p><i className="bi bi-calendar4"></i> 20/9/2025</p>
                     <p>Driver: Thunder Riders</p>
                   </div>
-                  <div className='col-md-6 text-end'>
+                  <div className='col-6 text-end'>
                     <p>Seats Available: 1</p>
-                    <p>Classic 350 Matt Scale Model 1:12 Dark Stealth Black</p>
+                    <p>Classic 350 Model</p>
                   </div>
                   <hr />
                 </div>
-                <div className='upcomingtext row d-flex'>
-                  <div className='col-md-6'><p className="upcomingmail">example@gmail.com</p></div>
-                  <div className='col-md-6 text-end'><p className="upcomingnumber">91 966 9966 996</p></div>
+                <div className='upcomingtext row'>
+                  <div className='col-6'><p className="upcomingmail">example@gmail.com</p></div>
+                  <div className='col-6 text-end'><p className="upcomingnumber">91 966 9966 996</p></div>
                 </div>
               </div>
-              <button className="btn btn-outline communitycardbtn">Join/Request to Join</button>
+              <button className="btn btn-outline communitycardbtn w-100">Join/Request to Join</button>
             </div>
           </div>
         ))}
 
-        {/* Members Section */}
-        <div className='col-md-1'></div>
-        <div className='col-md-3 justify-content-end'>
-          <div className='row chatrow justify-content-between'>
-            <div className='col-md-12 text-end d-flex align-items-center justify-content-end mb-4'>
+        <div className='col-12 col-lg-4'>
+          <div className='chatrow mb-3'>
+            <div className='d-flex justify-content-end align-items-center'>
               {showSearch && (
                 <input
                   type='text'
                   className='membersearch form-control form-control-sm me-2'
                   placeholder='Search members...'
-                  style={{ width: '100%', fontSize: '12px' }}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               )}
-              <i
-                className="bi bi-search"
-                style={{ cursor: 'pointer' }}
-                onClick={() => setShowSearch(!showSearch)}
-              ></i>
+              <i className="bi bi-search" style={{ cursor: 'pointer' }} onClick={() => setShowSearch(!showSearch)}></i>
             </div>
             <hr />
           </div>
 
-          {/* Add Member Form */}
-          <div className='addmember mb-1'>
-            <button className='btn btn-outline' onClick={() => setShowAddForm(!showAddForm)}>
+          <div className='addmember mb-3'>
+            <button className='btn btn-outline w-100' onClick={() => setShowAddForm(!showAddForm)}>
               <i className="bi bi-person-fill-add"></i> {showAddForm ? 'Cancel' : 'Add Members'}
             </button>
-            <p className='totalmember'>Total Members: {members.length}</p>
+            <p className='totalmember '>Total Members: {members.length}</p>
             {showAddForm && (
               <div className='mt-2 d-flex'>
                 <input
@@ -175,35 +163,24 @@ const Communitydetailed = () => {
             )}
           </div>
 
-          {/* Filtered Members List */}
-          <div className='row membersrow'>
-            <ul className='memberlist list-unstyled'>
-              <div className='row listrow'>
-                {filteredMembers.length > 0 ? (
-                  filteredMembers.map((member, index) => (
-                    <React.Fragment key={index}>
-                      <li className='col-md-6 d-flex align-items-center mb-2'>
-                        <img src={member.img} alt="profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '8px' }} />
-                        {member.name}
-                      </li>
-                      <li className='col text-end mb-2'>
-                        {member.isAdmin ? 'Admin' : ''}
-                      </li>
-                    </React.Fragment>
-                  ))
-                ) : (
-                  <p className='text-muted'>No members found</p>
-                )}
-              </div>
-            </ul>
-            <p className='leadmore'>Others...</p>
-          </div>
+          <ul className='memberlist list-unstyled row gx-2'>
+            {filteredMembers.length > 0 ? (
+              filteredMembers.map((member, index) => (
+                <li className='col-6 d-flex align-items-center mb-2' key={index}>
+                  <img src={member.img} alt="profile" className='me-2' style={{ width: '30px', height: '30px', borderRadius: '50%' }} />
+                  {member.name} {member.isAdmin && <span className='ms-1'>(Admin)</span>}
+                </li>
+              ))
+            ) : (
+              <p className='text-muted'>No members found</p>
+            )}
+          </ul>
+          <p className='leadmore text-center'>Others...</p>
         </div>
       </div>
 
-      {/* Connect With Us */}
       <div className='row upcomingheadrow2'>
-        <h3 className='col-md-12 text-start upcominghead1 mt-5'>Connect With Us</h3>
+        <h3 className='col-12 text-start upcominghead1 mt-5'>Connect With Us</h3>
         <span className='hrhead'><hr /></span>
         <p>Join discussions, share content, and grow the Bullet Club community</p>
         <p className='bulletsocialmedias'>
@@ -211,35 +188,31 @@ const Communitydetailed = () => {
         </p>
       </div>
 
-     
-
-      {/* Photo Gallery */}
-      <div className='galleryheadrow row'>    
-        <h3 className='col-md-12 text-start upcominghead1 mt-5'>Recent Trip Photos</h3>
+      <div className='galleryheadrow row'>
+        <h3 className='col-12 text-start upcominghead1 mt-5'>Recent Trip Photos</h3>
         <span className='hrhead'><hr /></span>
-         {/* Upload Photo Section */}
-      <div className='row mt-5'>
-        <div className='col-md-12'>
-          <h4 className="text-start upcominghead12 ">Upload a New Trip Photo</h4>
-          <form className="d-flex flex-column flex-md-row gap-3 align-items-start" onSubmit={handleUpload}>
-            <input
-              type="file"
-              id="uploadFileInput"
-              accept="image/*"
-              className="form-control w-auto"
-              onChange={handleFileChange}
-            />
-            <input
-              type="text"
-              className="form-control w-auto"
-              placeholder="Your name"
-              value={upload.name}
-              onChange={handleNameChange}
-            />
-            <button className="btn btn-outline uploadphotobtn" type="submit">Upload</button>
-          </form>
+        <div className='row mt-5'>
+          <div className='col-12'>
+            <h4 className="text-start upcominghead12 ">Upload a New Trip Photo</h4>
+            <form className="d-flex flex-column flex-md-row gap-3 align-items-start" onSubmit={handleUpload}>
+              <input
+                type="file"
+                id="uploadFileInput"
+                accept="image/*"
+                className="form-control w-auto"
+                onChange={handleFileChange}
+              />
+              <input
+                type="text"
+                className="form-control w-auto"
+                placeholder="Your name"
+                value={upload.name}
+                onChange={handleNameChange}
+              />
+              <button className="btn btn-outline uploadphotobtn" type="submit">Upload</button>
+            </form>
+          </div>
         </div>
-      </div>
         <div className='galleryheadrow2 mt-5'>
           <Slider {...settings}>
             {galleryData.map((item, idx) => (
